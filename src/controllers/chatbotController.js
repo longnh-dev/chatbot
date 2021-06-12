@@ -87,7 +87,7 @@ function handleMessage(sender_psid, received_message) {
                 "payload": {
                     "template_type": "generic",
                     "elements": [{
-                        "title": "Bạn muốn có muốn nhận tư vấn về mặt hàng này không ạ ?",
+                        "title": "Bạn có muốn nhận tư vấn về mặt hàng này không ạ ?",
                         "subtitle": "Vui lòng nhấn câu trả lời bên dưới để được tư vấn !",
                         "image_url": attachment_url,
                         "buttons": [
@@ -121,7 +121,7 @@ function handlePostback(sender_psid, received_postback) {
 
     // Set the response based on the postback payload
     if (payload === 'yes') {
-        response = { "text": "Cảm ơn bạn đã gửi hình ảnh, vui lòng chờ trong giây lát để được nhân viên tư vấn" }
+        response = { "text": "Cảm ơn bạn đã gửi hình ảnh, vui lòng chờ trong giây lát để nhận được sự tư vấn từ nhân viên" }
     } else if (payload === 'no') {
         response = { "text": "Cảm ơn bạn đã quan tâm đến sản phẩm của Gym Boy Store, nếu có bất cứ câu hỏi nào khác về sản phẩm tại cửa hàng bạn có thể inbox tại Fanpage Gym Boy Store" }
     }
