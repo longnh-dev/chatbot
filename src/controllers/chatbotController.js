@@ -93,7 +93,7 @@ function handleMessage(sender_psid, received_message) {
                         "buttons": [
                             {
                                 "type": "postback",
-                                "title": "Có",
+                                "title": "Có, đây đúng là sản phẩm mà tôi quan tâm",
                                 "payload": "yes",
                             },
                             {
@@ -121,9 +121,9 @@ function handlePostback(sender_psid, received_postback) {
 
     // Set the response based on the postback payload
     if (payload === 'yes') {
-        response = { "text": "Thanks!" }
+        response = { "text": "Cảm ơn bạn đã gửi hình ảnh, vui lòng chờ trong giây lát để được nhân viên tư vấn" }
     } else if (payload === 'no') {
-        response = { "text": "Oops, try sending another image." }
+        response = { "text": "Cảm ơn bạn đã quan tâm đến sản phẩm của Gym Boy Store, nếu có bất cứ câu hỏi nào khác về sản phẩm tại cửa hàng bạn có thể inbox tại Fanpage Gym Boy Store" }
     }
     // Send the message to acknowledge the postback
     callSendAPI(sender_psid, response);
