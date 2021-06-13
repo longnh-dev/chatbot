@@ -93,7 +93,7 @@ function handleMessage(sender_psid, received_message) {
                         "buttons": [
                             {
                                 "type": "postback",
-                                "title": "Có, đây đúng là sản phẩm mà tôi quan tâm",
+                                "title": "Đây đúng là sản phẩm mà tôi quan tâm",
                                 "payload": "yes",
                             },
                             {
